@@ -1,0 +1,97 @@
+# Multi-Vendor Order Management System - Backend - Node.js with Express and MongoDB
+
+This project is a RESTful API for managing a collection of books. It is built using Node.js, Express.js, and MongoDB (accessed via Mongoose). It also incorporates features like input validation, error handling, logging, and authentication.
+
+## 🚀 Tech Stack
+
+- **Node.js + Express.js**
+- **MongoDB + Mongoose**
+- **Zod** for request validation
+- **JWT** for authentication
+- **Bcrypt** for password hashing
+- **MongoDB Transactions** for order placement
+- Modular, clean folder structure
+
+---
+
+## Table of Contents
+
+1.  [Prerequisites](#prerequisites)
+2.  [Installation](#installation)
+3.  [Configuration](#configuration)
+4.  [Running the Application](#running-the-application)
+5.  [Logging](#logging)
+6.  [Project Structure](#project-structure)
+
+## 1. Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+*   **Node.js:**  Version 18 or higher is recommended.  Download from [https://nodejs.org/](https://nodejs.org/)
+*   **npm:**  Node Package Manager (usually comes with Node.js)
+*   **MongoDB:**  Make sure you have a MongoDB server running, either locally or in the cloud.  Download from [https://www.mongodb.com/](https://www.mongodb.com/)
+
+## 2. Installation
+
+1.  **Download the repository:**
+
+    ```bash
+    cd book-api
+    ```
+
+2.  **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+    This command will install all the necessary packages listed in the `package.json` file.
+
+## 3. Configuration
+
+1.  **Create a `.env` file:**
+
+    Create a file named `.env` in the root directory of the project.  This file will store your environment variables.  Do *not* commit this file to version control.
+
+2.  **Set environment variables:**
+
+    Add the following environment variables to your `.env` file, replacing the example values with your actual configuration:
+
+    ```
+    PORT=3000
+    MONGODB_URI=mongodb://localhost:27017/vendormanagement  # Replace with your MongoDB URI
+    JWT_SECRET=your_secret_key                 # Replace with a strong, random secret key
+    ```
+
+    See the [Environment Variables](#environment-variables) section for more details.
+
+## 4. Running the Application
+
+There are two ways to run the application:
+
+*   **Development Mode (with automatic restarts):**
+
+    ```bash
+    npm run dev
+    ```
+
+    This uses `nodemon` to monitor the project files for changes and automatically restart the server.  This is ideal for development.
+
+*   **Production Mode:**
+
+    ```bash
+    npm start
+    ```
+
+    This runs the application using Node.js directly.  This is suitable for production deployments.
+
+    The server will start and listen on the port specified in your `.env` file (or port 3000 if the `PORT` variable is not set).
+
+    ## 🔐 Authentication & Roles
+
+### Roles Supported
+- `customer`
+- `vendor`
+- `admin`
+
+. ├── controllers/ ├── middleware/ ├── models/ ├── routes/ ├── validators/ ├── utils/ ├── .env ├── app.js └── server.js

@@ -36,7 +36,7 @@ Before you begin, ensure you have the following installed:
 1.  **Clone the repository:**
 
     ```bash
-    git clone --depth 1 https://github.com/adityanarayan2021/VendorManagement.git
+    git clone https://github.com/adityanarayan2021/VendorManagement.git
     cd VENDOR-MANAGEMENT
     ```
 

@@ -1,6 +1,6 @@
 # Multi-Vendor Order Management System - Backend - Node.js with Express and MongoDB
 
-This project is a RESTful API for managing a collection of books. It is built using Node.js, Express.js, and MongoDB (accessed via Mongoose). It also incorporates features like input validation, error handling, logging, and authentication.
+This is a RESTful API built with Node.js, Express, and MongoDB, designed for managing a multi-vendor marketplace where customers can place orders, vendors can manage suborders, and admins can view all activities. It includes features like authentication, role-based access, MongoDB transactions, and order splitting by vendor.
 
 ## 🚀 Tech Stack
 
@@ -33,10 +33,13 @@ Before you begin, ensure you have the following installed:
 
 ## 2. Installation
 
-1.  **Download the repository:**
+1.  **Clone the repository:**
 
     ```bash
-    cd book-api
+    git clone https://github.com/adityanarayan2021/VendorManagement.git
+
+    ```bash
+    cd VENDOR-MANAGEMENT
     ```
 
 2.  **Install dependencies:**
